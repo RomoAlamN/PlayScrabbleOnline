@@ -1,0 +1,88 @@
+{
+  "name": "default",
+  "mode": "symmetric4",
+  "size": {
+    "x": 15,
+    "y": 15
+  },
+  "locations": [
+    {
+      "name": "Triple Word Score",
+      "decoration": "decoration_triple_word",
+      "location": {
+        "type": "edge",
+        "location": [0, 7, 14]
+      },
+      "effect": "#word#*3"
+    },
+    {
+      "name": "Double Letter Score",
+      "decoration": "decoration_double_letter",
+      "effect": "#letter#*2",
+      "location": {
+        "type": "quad",
+        "location": [
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 0,
+            "y": 3
+          },
+          {
+            "x": 2,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 2
+          },
+          {
+            "x": 7,
+            "y": 3
+          },
+          {
+            "x": 3,
+            "y": 7
+          },
+          {
+            "x": 6,
+            "y": 6
+          }
+        ]
+      }
+    },
+    {
+      "name": "Double Word Score",
+      "decoration": "decoration_double_word",
+      "effect": "#word#*2",
+      "location": {
+        "type": "diag",
+        "location": [1,2,3,4]
+      }
+    },
+    {
+      "name": "Triple Letter Score",
+      "decoration": "decoration_triple_letter",
+      "effect": "#letter#*3",
+      "location": {
+        "type": "quad",
+        "location": [
+          {
+            "x": 5,
+            "y": 1
+          },
+          {
+            "x": 1,
+            "y": 5
+          },
+          {
+            "x": 5,
+            "y": 5
+          }
+        ]
+      }
+    }
+  ]
+}

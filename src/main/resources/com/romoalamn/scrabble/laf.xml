@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE synth>
+<synth>
+    <style id="buttonStyle">
+        <insets top="32" left="32" bottom="32" right="-3"/>
+        <state>
+            <imagePainter method="buttonBackground" path="ui_items/button.png"
+                          sourceInsets="2 2 2 2" stretch="false"/>
+        </state>
+        <state value="MOUSE_OVER">
+
+            <imagePainter method="buttonBackground" path="ui_items/button_pressed.png"
+                          sourceInsets="2 2 2 2" stretch="false"/>
+        </state>
+        <state value="DISABLED">
+            <color value="#AAAAAA" type="TEXT_FOREGROUND"/>
+            <color value="#AAAAAA" type="FOREGROUND"/>
+            <imagePainter method="buttonBackground" path="ui_items/button_disabled.png"
+                          sourceInsets="2 2 2 2" stretch="false"/>
+        </state>
+    </style>
+    <style id="backingStyle">
+        <font name="Dialog" size="16"/>
+        <state>
+            <color value="#FFFFFF" type="TEXT_FOREGROUND"/>
+            <color value="#FFFFFF" type="FOREGROUND"/>
+            <color value="#000000" type="BACKGROUND"/>
+        </state>
+    </style>
+    <style id="board">
+        <font name="Courier" size="12"/>
+    </style>
+    <bind style="backingStyle" type="region" key=".*"/>
+    <bind style="buttonStyle" type="region" key="button"/>
+    <bind style="board" type="name" key="board"/>
+</synth>
